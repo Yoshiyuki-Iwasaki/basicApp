@@ -15,8 +15,9 @@ const EffectFunc = () => {
     <div className="App">
       <p>{`${count}回クリックされました`}</p>
       <ButtonGroup color="primary" aria-label="outlined primary button group">
-        <Button onClick={()=>setCount((prev) => prev + 1)}>ボタン</Button>
-        <Button onClick={()=>setCount(0)}>リセット</Button>
+        <Button onClick={()=>setCount((prev) => prev + 1)}>+</Button>
+        <Button onClick={()=>setCount((prev) => prev - 1)}>-</Button>
+        <Button onClick={()=>setCount(0)}>リセット</Button>
         <Button onClick={() => setCount(intialState)}>最初の数値に戻す</Button>
       </ButtonGroup>
     </div>
